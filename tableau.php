@@ -54,7 +54,7 @@ $score_global = round(($score_phishing + $score_quiz) / 2);
     <div class="container">
         <nav class="navbar">
             <div class="nav-content">
-                <a href="index.php" class="logo"><i class="fas fa-shield-alt"></i> CyberAware</a>
+                <a href="index.php" class="logo"><input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div class="nav-menu">
                     <a href="accueil.php" class="nav-link">Dashboard</a>
                     <a href="tableau.php" class="nav-link active">Bilan</a>

@@ -37,8 +37,7 @@ $resultats = $conn->query($sql);
         <nav class="navbar">
             <div class="nav-content">
                 <a href="index.php" class="logo">
-                    <i class="fas fa-shield-alt"></i> CyberAware
-                </a>
+                    <input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div class="nav-menu">
                     <a href="accueil.php" class="nav-link">Tableau de bord</a>
                     <a href="quiz_liste.php" class="nav-link active">Liste des Quiz</a>

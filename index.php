@@ -24,8 +24,7 @@ $est_connecte = isset($_SESSION['user_id']);
         <nav class="navbar">
             <div class="nav-content">
                 <a href="index.php" class="logo">
-                    <i class="fas fa-shield-alt"></i> <span>CyberAware</span>
-                </a>
+                    <input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div class="nav-menu">
                     <a href="index.php" class="nav-link active">Accueil</a>
                     

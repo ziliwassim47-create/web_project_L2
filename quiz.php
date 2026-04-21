@@ -74,7 +74,7 @@ $question_actuelle = $liste_questions[$index];
         
         <nav class="navbar">
             <div class="nav-content">
-                <a href="accueil.php" class="logo"><i class="fas fa-shield-alt"></i> CyberAware</a>
+                <a href="accueil.php" class="logo"><input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div style="font-weight: bold; color: var(--primary-color);">
                     Question <?php echo ($index + 1); ?> / <?php echo $total_questions; ?>
                 </div>

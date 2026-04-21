@@ -45,7 +45,7 @@ $moyenne_phishing = round($conn->query($sql_moy_phish)->fetch_assoc()['moyenne']
         
         <nav class="navbar">
             <div class="nav-content">
-                <a href="index.php" class="logo"><i class="fas fa-shield-alt"></i> CyberAware</a>
+                <a href="index.php" class="logo"><input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div class="nav-menu">
                     <a href="accueil.php" class="nav-link active">Tableau de bord</a>
                     <a href="deconnexion.php" style="background-color:#FF0000; color:white; padding:8px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;"><i class="fas fa-power-off"></i>Déconnexion</a>

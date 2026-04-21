@@ -71,7 +71,7 @@ $nombre_faits = count($ids_deja_faits);
         
         <nav class="navbar">
             <div class="nav-content">
-                <a href="accueil.php" class="logo"><i class="fas fa-shield-alt"></i> CyberAware</a>
+                <a href="accueil.php" class="logo"><input type="image" src="logoblanc.png" width="250px" height="120px"></a>
                 <div style="opacity: 0.8; font-size: 0.9rem;">
                     Scénario <?php echo $nombre_faits + ($scenario_actuel ? 1 : 0); ?> / <?php echo $total_scenarios; ?>
                 </div>
