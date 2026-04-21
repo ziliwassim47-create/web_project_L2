@@ -48,9 +48,7 @@ $moyenne_phishing = round($conn->query($sql_moy_phish)->fetch_assoc()['moyenne']
                 <a href="index.php" class="logo"><i class="fas fa-shield-alt"></i> CyberAware</a>
                 <div class="nav-menu">
                     <a href="accueil.php" class="nav-link active">Tableau de bord</a>
-                    <a href="deconnexion.php" class="btn btn-secondary" style="background:#f44336;">
-                        <i class="fas fa-power-off"></i> Déconnexion
-                    </a>
+                    <a href="deconnexion.php" style="background-color:#FF0000; color:white; padding:8px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;"><i class="fas fa-power-off"></i>Déconnexion</a>
                 </div>
             </div>
         </nav>
@@ -94,32 +92,27 @@ $moyenne_phishing = round($conn->query($sql_moy_phish)->fetch_assoc()['moyenne']
 
             <div class="dashboard-grid">
                 
-                <a href="quiz_liste.php" class="dashboard-card">
-                    <i class="fas fa-list-ol card-icon"></i>
+                <a href="quiz_liste.php" class="dashboard-card" style="color:white; text-decoration:none;">
                     <h3>Liste des Quiz</h3>
                     <p>Découvrez les différents thèmes et testez vos connaissances théoriques.</p>
                 </a>
 
-                <a href="phishing.php" class="dashboard-card">
-                    <i class="fas fa-search card-icon"></i>
+                <a href="phishing.php" class="dashboard-card" style="color:white; text-decoration:none;">
                     <h3>Détecter le Phishing</h3>
                     <p>Mettez-vous en situation réelle : saurez-vous repérer les emails piégés ?</p>
                 </a>
 
-                <a href="resultats_quiz.php" class="dashboard-card">
-                    <i class="fas fa-history card-icon"></i>
+                <a href="resultats_quiz.php" class="dashboard-card" style="color:white; text-decoration:none;">
                     <h3>Historique des Quiz</h3>
                     <p>Consultez vos résultats passés et les corrections pour progresser.</p>
                 </a>
 
-                <a href="resultats_phishing.php" class="dashboard-card">
-                    <i class="fas fa-chart-line card-icon"></i>
+                <a href="resultats_phishing.php" class="dashboard-card" style="color:white; text-decoration:none;">
                     <h3>Scores Phishing</h3>
                     <p>Analysez vos réflexes face aux tentatives d'arnaques par email.</p>
                 </a>
 
-                <a href="tableau.php" class="dashboard-card">
-                    <i class="fas fa-pie-chart card-icon"></i>
+                <a href="tableau.php" class="dashboard-card" style="color:white; text-decoration:none;">
                     <h3>Statistiques Globales</h3>
                     <p>Visualisez votre progression globale à travers des graphiques simples.</p>
                 </a>
