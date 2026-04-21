@@ -64,25 +64,20 @@ $moyenne_phishing = round($conn->query($sql_moy_phish)->fetch_assoc()['moyenne']
 
             <div class="stats-grid" style="margin-bottom: 3rem;">
                 <article class="stat-card">
-                    <i class="fas fa-check-circle" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
-                    <h3>Quiz Complétés</h3>
-                    <p class="stat-value"><?php echo $nb_quiz_faits; ?></p>
+                    <h3>Quiz Complétés</h3><p class="stat-value"><?php echo $nb_quiz_faits; ?></p>
                 </article>
 
                 <article class="stat-card">
-                    <i class="fas fa-award" style="font-size: 2rem; color: #ffca28; margin-bottom: 0.5rem;"></i>
                     <h3>Réussite Quiz</h3>
                     <p class="stat-value"><?php echo $moyenne_quiz; ?>%</p>
                 </article>
 
                 <article class="stat-card">
-                    <i class="fas fa-envelope-open-text" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 0.5rem;"></i>
                     <h3>Tests Phishing</h3>
                     <p class="stat-value"><?php echo $nb_phishing_faits; ?></p>
                 </article>
 
                 <article class="stat-card">
-                    <i class="fas fa-user-shield" style="font-size: 2rem; color: #4caf50; margin-bottom: 0.5rem;"></i>
                     <h3>Score Phishing</h3>
                     <p class="stat-value"><?php echo $moyenne_phishing; ?>%</p>
                 </article>
