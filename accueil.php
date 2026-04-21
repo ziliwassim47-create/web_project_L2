@@ -12,7 +12,7 @@ $conn->set_charset("utf8");
 
 $id_user = $_SESSION['user_id'];
 
-/
+
 $sql_quiz_count = "SELECT COUNT(DISTINCT q.quiz_id) as total FROM user_responses ur JOIN questions q ON ur.question_id = q.id WHERE ur.user_id = $id_user";
 $res_quiz = $conn->query($sql_quiz_count);
 $nb_quiz_faits = $res_quiz->fetch_assoc()['total'];
