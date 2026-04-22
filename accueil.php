@@ -29,6 +29,9 @@ $nb_phishing_faits = $conn->query($sql_phish)->fetch_assoc()['total'];
 
 $sql_moy_phish = "SELECT AVG(is_correct) * 100 as moyenne FROM phishing_responses WHERE user_id = $id_user";
 $moyenne_phishing = round($conn->query($sql_moy_phish)->fetch_assoc()['moyenne'] ?? 0);
+
+$score_global_calcule = round(($moyenne_quiz + $moyenne_phishing) / 2);
+$conn->query("UPDATE users SET score = $score_global_calcule WHERE id = $id_user");
 ?>
 
 <!DOCTYPE html>

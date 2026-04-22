@@ -22,6 +22,8 @@ $score_quiz = ($res_q['total'] > 0) ? round(($res_q['corrects'] / $res_q['total'
 
 $score_global = round(($score_phishing + $score_quiz) / 2);
 
+$conn->query("UPDATE users SET score = $score_global WHERE id = $id_utilisateur");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,14 +36,12 @@ $score_global = round(($score_phishing + $score_quiz) / 2);
         .score-circle-big {
             width: 220px; height: 220px; border-radius: 50%;
             margin: 2rem auto; display: flex; align-items: center; justify-content: center;
-            border: 8px solid var(--border-color);
+            background: conic-gradient(var(--primary-color) <?php echo $score_global; ?>%, var(--border-color) 0);
             position: relative;
         }
-        .score-circle-big::after {
-            content: ''; position: absolute; top: -8px; left: -8px; right: -8px; bottom: -8px;
-            border-radius: 50%; border: 8px solid var(--primary-color);
-            clip-path: polygon(50% 50%, 50% 0, <?php echo (50 + 50 * sin(deg2rad($score_global * 3.6))); ?>% <?php echo (50 - 50 * cos(deg2rad($score_global * 3.6))); ?>%, 50% 50%);
-            /* Note : clip-path est un peu complexe, c'est pour dessiner le contour du score */
+        .score-circle-big::before {
+            content: ''; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+            background: var(--card-bg); border-radius: 50%;
         }
         .score-num { font-size: 4rem; font-weight: bold; color: var(--primary-color); z-index: 10; }
         

@@ -12,8 +12,15 @@ $succes = "";
 
 if (isset($_POST['connexion'])) {
 
-$username = $_POST['username'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
+
+    if ($username === 'admin' && $password === 'adminweb') {
+        $_SESSION['admin_logged'] = true;
+        $_SESSION['username'] = 'Administrateur';
+        header("Location: admin_dashboard.php");
+        exit;
+    }
 
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $resultat = $conn->query($sql);
