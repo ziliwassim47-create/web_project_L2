@@ -1,0 +1,21 @@
+{
+  "project_name": "cyberaware",
+  "version": "1.0.0",
+  "author": "WassimZili",
+  "establishment": "ISIMM",
+  "teacher": "Senda Laatawi",
+
+  
+  "server": {
+    "host": "localhost",
+    "port": 80,
+    "environment": "development"
+  },
+  
+  "database": {
+    "type": "MySQL",
+    "host": "localhost",
+    "port": 3306,
+    "db_name": "cyberaware_db",
+    "username": "root"}
+}
